@@ -124,7 +124,7 @@ def visualize_1D_integration(x, y,a_1, b_1, f, N, estimates):
 def exact_integral_2D(f, a, b):
     result, _ = dblquad(f, a, b, lambda x: a, lambda x: b)
     return result
- 
+    
 def visualize_2D_integration(f, a, b, N):
     x = np.linspace(a, b, 100)
     y = np.linspace(a,b, 100)

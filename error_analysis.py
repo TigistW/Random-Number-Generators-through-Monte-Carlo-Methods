@@ -12,7 +12,6 @@ def monte_carlo_error_analysis_1D(f, a, b, N):
     return integral, error_bound, f_values
 
 def monte_carlo_error_analysis_2D(f, a, b, N):
-   
     x_samples = np.random.uniform(a, b, N)
     y_samples = np.random.uniform(a, b, N)
     f_values = f(x_samples, y_samples)
@@ -24,7 +23,6 @@ def monte_carlo_error_analysis_2D(f, a, b, N):
 
 
 def plot_error(N_values, theoretical_errors, exact_errors, title="Error Analysis"):
-
     fig, ax = plt.subplots(figsize=(10, 6))
     ax.plot(N_values, theoretical_errors, label="Theoretical Error", linestyle='--', color='orange')
     ax.plot(N_values, exact_errors, label="Exact Error", linestyle='-', color='blue')
